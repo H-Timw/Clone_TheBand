@@ -1,0 +1,346 @@
+:root {
+  --black: #292929; /* Mine Shaft */
+  --dark-gray: #3d3d3d; /* Ironside Gray */
+  --light-gray: #c4c4c4;
+  --white: #ffffff; /* White*/
+  --tea: #c6beb1; /* Tea */
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+*:not(hr) {
+  border: none;
+}
+img {width: 100%;}
+button,
+a {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+/* nav */
+nav {
+  font-size: 1.5rem;
+  color: var(--white);
+  position: sticky;
+  top: 0;
+  height: 4.84rem;
+  background-color: var(--black) !important;
+  z-index: 99;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+nav a , #more{
+  display: block;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  width: 10%;
+  float: left;
+}
+#nav-more {
+  width: 100%;
+}
+nav a:hover, #more:hover{
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+nav a:visited {
+  color: var(--white);
+}
+#nav-search {
+  height: 4.84rem;
+  float: right;
+  background-color: inherit;
+  color: var(--white);
+  font-weight: bold;
+}
+#nav-search:hover {
+  background-color: red;
+}
+nav a,
+#nav-search {
+  padding: 1.5rem 2rem;
+}
+#options {
+  position: absolute;
+  top: 4.84rem;
+  background-color: var(--white);
+  display: none;
+  z-index: 10;
+}
+#options a {
+  color: var(--black);
+  min-width: 16rem;
+  display: block;
+  width: 100%;
+  text-transform: capitalize;
+}
+#options a:hover {
+  background-color: var(--light-gray);
+}
+#more:hover #options {
+  display: block;
+}
+/* end-nav */
+#slideShow {position: relative;}
+#slideShow img { max-height: 74rem;}
+.text-on-slide {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  text-align: center;
+}
+.text-on-slide h3 {
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  font-weight: 400;
+}
+.text-on-slide p {
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+section {
+  position: relative;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+section > div {
+  width: 80rem;
+  margin: auto;
+}
+section h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  margin-bottom: 2rem;
+}
+section span {
+  font-size: 1.75rem;
+  color: var(--light-gray);
+  display: inline-block;
+  margin-bottom: 3rem;
+}
+section p {
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 2.5rem;
+  color: var(--black);
+  word-spacing: 4px;
+}
+
+/* band */
+
+#members {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+#members h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1.5rem 0;
+}
+.members {
+  width: 25%;
+  text-align: center;
+}
+.avt_member {
+  width: 100%;
+}
+/* end-band */
+/* tour */
+#tour {
+  background-color: var(--black);
+  padding-bottom: 4rem;
+}
+#tour-dates h1 {
+  color: var(--white);
+}
+#dates {
+  background-color: var(--white);
+  text-align: justify;
+  margin-top: 4rem;
+}
+#dates span,
+#tours span {
+  display: inline !important;
+  color: var(--dark-gray);
+  line-height: 3rem;
+}
+.dates {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+span.sold-out {
+  color: var(--white) !important;
+  background-color: red;
+  padding: 0.5rem;
+  margin-left: 2rem;
+}
+span.ticket {
+  float: right;
+  background-color: var(--black);
+  color: var(--white) !important;
+  width: 3rem;
+  border-radius: 50%;
+  text-align: center;
+}
+#tours {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.tours {
+  background-color: var(--white);
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.tours img:hover {
+  filter: brightness(70%);
+}
+.tour-info {
+  padding: 1.5rem;
+}
+h3.tour-place {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--black);
+  padding: 1rem 0;
+}
+span.tour-time {
+  opacity: 0.9;
+}
+#tours p {
+  padding: 1.5rem 0;
+  word-spacing: 1px;
+}
+button.white-black {
+  padding: 1rem 1.5rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: var(--black);
+  color: var(--white);
+  text-transform: capitalize;
+}
+button.white-black:hover {
+  background-color: var(--light-gray);
+  color: var(--black);
+}
+/* end-tour */
+.contacts {
+  margin-bottom: 10rem;
+}
+.contact-container,
+#contact-user {
+  display: flex;
+  flex-direction: row;
+}
+#contact-info,
+#contact-message {
+  width: 50%;
+}
+#contact-info,
+#contact-message {
+  display: flex;
+  flex-direction: column;
+}
+#contact-message {
+  justify-content: right;
+  padding: 0.5rem;
+}
+#contact-info i {
+  color: var(--black);
+  padding-right: 1rem;
+}
+#contact-message input {
+  line-height: 3rem;
+  padding: 0.5rem;
+  border: 1px solid var(--light-gray);
+  margin: 0.5rem;
+}
+#contact-user input {
+  width: 50%;
+}
+button#send-message {
+  align-self: flex-end;
+  text-transform: uppercase;
+  margin: 1.5rem 0.5rem;
+}
+footer {
+  background-color: var(--white);
+  text-align: center;
+  margin-bottom: 10rem;
+}
+footer span {
+  font-size: 1.5rem;
+  color: var(--light-gray);
+  line-height: 3rem;
+}
+footer span a:visited {
+  color: var(--light-gray);
+}
+footer a {
+  text-decoration: underline;
+}
+
+img.img-footer {
+  width: 3rem;
+  cursor: pointer;
+}
+.nav-mobile {
+  display: none;
+}
+.nav-mobile-sub-menu {
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .nav_pc {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+  }
+  .nav-mobile-sub-menu {
+    display: none;
+  }
+  #nav-mobile-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #333;
+    opacity: 0.3;
+    display: none;
+  }
+  .nav-mobile-display:checked ~ .nav-mobile-sub-menu{
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-mobile-display:checked ~ #nav-mobile-overlay{
+    display: block;
+  }
+  .ti-menu {
+    float:right;
+    margin: 1.5rem;
+  }
+
+}

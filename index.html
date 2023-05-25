@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="./assets/vendors/themify-icons/css/themify-icons.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+    <!-- title -->
+    <title>The Band</title>
+  </head>
+  <body>
+    <nav class="nav_pc">
+      <!-- navigation -->
+      <a href="#home">Home</a>
+      <a href="#band">band</a>
+      <a href="#tour">tour</a>
+      <a href="#contacts">Contact</a>
+      <div id="more">
+        <a id="nav-more">More<i class="ti-angle-down"></i></a>
+        <div id="options">
+          <a href="#">Merchandise</a><br />
+          <a href="#">Extras</a><br />
+          <a href="#">Media</a>
+        </div>
+      </div>
+      <button id="nav-search">
+        <i class="ti-search"></i>
+      </button>
+    </nav>
+    <nav class="nav-mobile">
+      <a href="#home">Home</a>
+      <input type="checkbox" hidden name="" id="nav-mobile-menu" class="nav-mobile-display">
+      <label for="nav-mobile-menu" id="nav-mobile-overlay" class="nav-mobile-display"></label>
+      <label for="nav-mobile-menu" class="nav-mobile-display"><i class="ti-menu"></i></label>
+      <div class="nav-mobile-sub-menu">
+        <a href="#band">band</a>
+        <a href="#tour">tour</a>
+        <a href="#contacts">contact</a>
+      </div>
+    </nav>
+    <header id="home">
+      <div id="slideShow">
+        <div class="slide_1" style="display: block;">
+          <img src="./assets/imgs/img_ch.jpg" alt="Band now playing music" />
+          <div class="text-on-slide">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago - A night we won't forget.</p>
+          </div>
+        </div>
+        <div class="slide_1" style="display: none;">
+          <img src="./assets/imgs/img_ny.jpg" alt="picture in NY show" />
+          <div class="text-on-slide">
+            <h3>New York</h3>
+            <p>The atmosphere in New York is lorem ipsum.</p>
+          </div>
+        </div>
+        <div class="slide_1" style="display: none;">
+          <img src="./assets/imgs/img_la.jpg" alt="picture in LA show" />
+          <div class="text-on-slide">
+            <h3>Los Angeles</h3>
+            <p>We had the best time playing at Venice Beach!</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="band">
+      <div id="band-containers">
+        <h1>The Band</h1>
+        <span><i>We love music</i></span>
+        <p>
+          We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div id="members">
+          <div class="members" id="member1">
+            <h2 id="name1">John</h2>
+            <img src="./assets/imgs/img_bandmember.jpg" alt="John" class="avt_member" id="avt1" />
+            <h2 id="description1">John is the smartest.</h2>
+          </div>
+          <div class="members" id="member2">
+            <h2 id="name2">Paul</h2>
+            <img src="./assets/imgs/img_bandmember.jpg" alt="Paul" class="avt_member" id="avt2" />
+            <h2 id="description2">Paul is the prettiest.</h2>
+          </div>
+          <div class="members" id="member3">
+            <h2 id="name3">Ringo</h2>
+            <img src="./assets/imgs/img_bandmember.jpg" alt="Ringo" class="avt_member" id="avt3" />
+            <h2 id="description3">Ringo is the funniest.</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tour">
+      <div id="tour-dates">
+        <h1>tour-dates</h1>
+        <span><i>Remember to book your tickets!</i></span>
+        <div id="dates">
+          <div class ="dates" id="september">
+            <span class="month">September</span>
+            <span class="sold-out">Sold out</span>
+          </div>
+          <div class ="dates" id="october">
+            <span class="month">October</span>
+            <span class="sold-out">Sold out</span>
+          </div>
+          <div class ="dates" id="november">
+            <span class="month">November</span>
+            <span class="ticket">3</span>
+          </div>
+        </div>
+        <div id="tours">
+          <div class="tours">
+            <img src="./assets/imgs/newyork.jpg" alt="newyork-img">
+            <div class="tour-info">
+              <h3 class="tour-place">New York</h3>
+              <span class="tour-time">Fri 27 Nov 2016</span>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button class="white-black">buy tickets</button>
+            </div>
+          </div>
+          <div class="tours">
+            <img src="./assets/imgs/paris.jpg" alt="paris-img">
+            <div class="tour-info">
+              <h3 class="tour-place">Paris</h3>
+              <span class="tour-time">Sat 28 Nov 2016</span>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button class="white-black">buy tickets</button>
+            </div>
+          </div>
+          <div class="tours">
+            <img src="./assets/imgs/sanfran.jpg" alt="sanfran-img">
+            <div class="tour-info">
+              <h3 class="tour-place">San Francisco</h3>
+              <span class="tour-time">Sun 29 Nov 2016</span>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button class="white-black">buy tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacts">
+      <div class="contacts">
+        <h1>Contact</h1>
+        <span><i>Fan? Drop a note!</i></span>
+        <div class="contact-container">
+          <div id="contact-info">
+            <p><i class="ti-location-pin"></i>Chicago, US</p>
+            <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+            <p><i class="ti-email"></i>Email: mail@mail.com</p>
+          </div>
+          <div id="contact-message">
+            <div id="contact-user">
+              <input type="text" for="name" placeholder="Name">
+              <input type="text" for="user-email" placeholder="Email">
+            </div>
+            <input type="text" for="message" placeholder="Message">
+            <button class="white-black" id="send-message">Send</button>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/imgs/map.jpg" alt="our-place">
+    </section>
+    <footer>
+      <img src="./assets/imgs/logo_facebook.png" alt="connect by facebook" srcset="" class="img-footer" />
+      <img src="./assets/imgs/logo_ig.png" alt="connect by insta" srcset="" class="img-footer" />
+      <img src="./assets/imgs/logo_ghost.png" alt="connect by ghost" srcset="" class="img-footer" />
+      <img src="./assets/imgs/logo_printerest.png" alt="connect by printerest" class="img-footer" />
+      <img src="./assets/imgs/logo_twitter.png" alt="connect by twitter" srcset="" class="img-footer" />
+      <img src="./assets/imgs/logo_in.png" alt="connect by in" srcset="" class="img-footer" />
+      <!-- <img src="./assets/imgs/map.jpg" alt="" srcset=""> -->
+      <br />
+      <span>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></span>
+    </footer>
+    <script src="./assets/js/slideshow.js"></script>
+  </body>
+</html>
